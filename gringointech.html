@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GringoInTech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('imagen3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            position: relative;
+        }
+
+        /* Efecto de ofuscado en la imagen de fondo */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('imagen3.jpg') no-repeat center center fixed;
+            background-size: cover;
+           
+            opacity: 0.6; /* Opacidad para hacerla más tenue */
+            z-index: -1; /* Coloca el filtro detrás del contenido */
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            text-decoration: underline; /* Subrayar el nombre */
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 0 0 1px #ffa006, 0 0 15px #f39c12;
+        }
+
+     
+
+        p {
+            color: white;
+         
+            font-size: 1.2em;
+            font-weight: bold;
+            text-shadow: 0 0 8px #08050000, 0 0 15px #13120f;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: underline; /* Subrayar los enlaces */
+            font-size: 1.2em;
+            font-weight: bold;
+            text-shadow: 0 0 8px #f39c12, 0 0 15px #f39c12;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #f1b00a;
+            font-size: 2.5em;
+       
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: underline; /* Subrayar los enlaces */
+            font-size: 1.2em;
+            font-weight: bold;
+            text-shadow: 0 0 8px #100f0f, 0 0 15px #f39c12;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GringoInTech</h1>
+        <h3>SysAdmin</h3>
+        <p>FP Ciclo Superior de Administración de Sistemas Informáticos en Red</p>
+        <p>IES MURALLA ROMANA - 2023/2025</p>
+        <nav>
+            <ul>
+                <li><a href="#primer-ano">1° Año de ADSIINRE</a></li>
+                <li><a href="#segundo-ano">2° Año de ADSIINRE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="primer-ano">
+        <h2>1° Año de ADSIINRE</h2>
+        <p>Aquí encontrarás los recursos para el 1° Año de ADSIINRE: </p>
+        <ul>
+            <li><a href="https://drive.google.com/drive/folders/1JlC8MzqSWRNSzVBvxO2jDfaCiyuIsCMG?usp=sharing">ISO - Implantación de Sistemas Operativos</a></li>
+            <li><a href="link_a_drive_2">FUHA - Fundamentos de Hardware</a></li>
+            <li><a href="link_a_drive_3">PAR - Planificación de Redes</a></li>
+            <li><a href="link_a_drive_5">XBD - Xestión de base de datos</a></li>
+            <li><a href="link_a_drive_6">LMSX - Lenguajes de Marcas y sistemas de Gestión</a></li>
+        </ul>
+    </section>
+
+    <section id="segundo-ano">
+        <h2>2° Año de ADSIINRE</h2>
+        <p>Aquí encontrarás los recursos para el 2° Año de ADSIINRE:</p>
+        <ul>
+            <li><a href="link_a_drive_7">ASO - Administración de sistemas operativos</a></li>
+            <li><a href="link_a_drive_8">SRI - Servizos de rede e internet</a></li>
+            <li><a href="link_a_drive_9">IAW - Implantación de aplicaciones web</a></li>
+            <li><a href="link_a_drive_10">SAD - Seguridad y alta disponibilidad</a></li>
+            <li><a href="link_a_drive_12">ASXB - Administración de sistemas gestores de base de datos</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GringoInTech - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
