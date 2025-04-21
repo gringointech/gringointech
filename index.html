@@ -20,7 +20,7 @@
             flex-direction: column;
             min-height: 100vh;
         }
-
+    
         body::before {
             content: "";
             position: absolute;
@@ -33,39 +33,38 @@
             opacity: 0.6;
             z-index: -1;
         }
-
+    
         header {
             background: rgba(0, 0, 0, 0.7);
-
             text-align: center;
+            padding: 20px 10px;
         }
-
+    
         header h1 {
             color: white;
-            text-decoration: underline; /* Subrayar el nombre */
-            font-size: 3em;
+            text-decoration: underline;
+            font-size: 2.5em;
             font-weight: bold;
             text-shadow: 0 0 1px #ffa006, 0 0 15px #f39c12;
-            
         }
-
+    
         nav {
             background: rgba(0, 0, 0, 0.8);
             padding: 10px 0;
         }
-
+    
         nav ul {
             list-style: none;
             padding: 0;
             margin: 0;
             text-align: center;
         }
-
+    
         nav ul li {
             display: inline-block;
             margin: 10px;
         }
-
+    
         nav ul li a {
             text-shadow: 0 0 1px #ffa006, 0 0 15px #f39c12;
             text-decoration: underline;
@@ -73,85 +72,103 @@
             font-size: 1.2em;
             cursor: pointer;
         }
-
+    
+        main {
+            padding: 20px;
+            flex-grow: 1;
+        }
+    
         section {
             display: none;
-            padding: 40px;
-            margin: 100px;
             background: rgba(0, 0, 0, 0.6);
             border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
         }
-
+    
         section.active {
             display: block;
         }
-
-        h2 {text-align: center ;
+    
+        h2 {
+            text-align: center;
             color: #f1b00a;
-            font-size: 2.5em;
+            font-size: 2em;
         }
-
+    
         h3 {
             color: #f1b00a;
             font-size: 1.5em;
         }
-
-        /* Cambiar color de enlaces en contenidos de ASIR */
-        #contenido-asir a {
-            text-shadow: 0 0 1px #ffa006, 0 0 15px #f39c12;
-        }
-
-        #contenido-asir a:hover {
-            color: #ffa006; /* Color naranja más claro al hacer hover */
-        }
-
+    
         ul {
             list-style: none;
             padding: 0;
         }
-
+    
         ul li {
             margin: 10px 0;
         }
-
+    
         ul li a {
             color: white;
             text-decoration: underline;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 1.1em;
         }
-
+    
         footer {
             background: rgba(0, 0, 0, 0.8);
             text-align: center;
             padding: 10px;
-            margin-top: auto; /* Asegura que el footer se mantenga al final */
+            margin-top: auto;
         }
-
-        /* Ajustar el contenido para que no quede cubierto por el menú */
-        main {
-            padding-top: 80px; /* Espacio suficiente para el menú */
-            flex-grow: 1; /* Para que el contenido ocupe el espacio disponible */
-        }
-
-   
-
-        /* Para el enlace de correo electrónico */
-        a[href^="mailto:"] {
-            color: #f1b00a; /* Color naranja */
-        }
-
-        /* Para el enlace de LinkedIn */
-        a[href*="linkedin.com"] {
-            color: #f1b00a; /* Color naranja */
-        }
-
+    
         p {
             font-weight: bold;
-            font-size: 20px;
+            font-size: 1.1em;
         }
-
+    
+        /* Enlaces especiales */
+        a[href^="mailto:"], a[href*="linkedin.com"] {
+            color: #f1b00a;
+        }
+    
+        /* RESPONSIVE PARA TELÉFONO */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+    
+            header h3, header p {
+                font-size: 1em;
+            }
+    
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+    
+            nav ul li a {
+                font-size: 1em;
+            }
+    
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+    
+            h2 {
+                font-size: 1.5em;
+            }
+    
+            p, ul li a {
+                font-size: 1em;
+            }
+        }
     </style>
+    
 
     <script>
         function mostrarSeccion(id) {
