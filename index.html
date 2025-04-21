@@ -129,20 +129,38 @@ ul li a:hover {
             color: #f1b00a;
         }
         @media (max-width: 768px) {
-    body {
-        background-attachment: scroll; /* En móvil, no mantener fijo */
-        background-position: center top;
-        background-size: cover;
+        body {
+            background: url('imagen3.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: scroll; /* Para que en móvil no quede fijo y se vea fluido */
+        }
+        body::before {
+            background: url('imagen3.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: scroll;
+            opacity: 0.7; /* Un poco más opaco para que en móvil se vea mejor */
+        }
+        header h1 {
+            font-size: 2em;
+        }
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+        nav ul li a {
+            font-size: 1em;
+        }
+        section {
+            margin: 10px;
+            padding: 15px;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        p, ul li a {
+            font-size: 1em;
+        }
     }
-
-    body::before {
-        background-attachment: scroll;
-        background-position: center top;
-        background-size: cover;
-        opacity: 0.7; /* Puedes subir un poquito para verse mejor en móvil */
-    }
-}
-
     </style>
 
     <script>
