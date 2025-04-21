@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GringoInTech</title>
-    <!-- Enlace al favicon -->
-    <link rel="icon" href="icono.jpg" type="image/x-icon">
+    <title>GringoInTech - Administración de Sistemas Informáticos</title>
+    <meta name="description" content="GringoInTech: Recursos y apuntes de FP Ciclo Superior de Administración de Sistemas Informáticos en Red (ASIR).">
+    <meta name="keywords" content="ASIR, Administración de Sistemas, FP Informática, Sistemas Informáticos, Redes, Seguridad informática, GringoInTech">
+    <meta name="author" content="GringoInTech">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,10 +16,11 @@
             background: url('imagen3.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
-        /* Efecto de ofuscado en la imagen de fondo */
         body::before {
             content: "";
             position: absolute;
@@ -27,8 +30,8 @@
             height: 100%;
             background: url('imagen3.jpg') no-repeat center center fixed;
             background-size: cover;
-            opacity: 0.6; /* Opacidad para hacerla más tenue */
-            z-index: -1; /* Coloca el filtro detrás del contenido */
+            opacity: 0.6;
+            z-index: -1;
         }
 
         header {
@@ -45,41 +48,60 @@
             text-shadow: 0 0 1px #ffa006, 0 0 15px #f39c12;
         }
 
-        p {
-            color: white;
-            font-size: 1.2em;
-            font-weight: bold;
-            text-shadow: 0 0 8px #08050000, 0 0 15px #13120f;
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
+            text-align: center;
         }
 
         nav ul li {
-            display: inline;
-            margin-right: 20px;
+            display: inline-block;
+            margin: 10px;
         }
 
         nav ul li a {
-            color: white;
-            text-decoration: underline; /* Subrayar los enlaces */
-            font-size: 1.2em;
+            text-shadow: 0 0 1px #ffa006, 0 0 15px #f39c12;
+            text-decoration: underline;
             font-weight: bold;
-            text-shadow: 0 0 8px #f39c12, 0 0 15px #f39c12;
+            font-size: 1.2em;
+            cursor: pointer;
         }
 
         section {
+            display: none;
             padding: 40px;
             margin: 20px;
             background: rgba(0, 0, 0, 0.6);
             border-radius: 8px;
         }
 
+        section.active {
+            display: block;
+        }
+
         h2 {
             color: #f1b00a;
             font-size: 2.5em;
+        }
+
+        h3 {
+            color: #f1b00a;
+            font-size: 1.5em;
+        }
+
+        /* Cambiar color de enlaces en contenidos de ASIR */
+        #contenido-asir a {
+            text-shadow: 0 0 1px #ffa006, 0 0 15px #f39c12;
+        }
+
+        #contenido-asir a:hover {
+            color: #ffa006; /* Color naranja más claro al hacer hover */
         }
 
         ul {
@@ -93,60 +115,117 @@
 
         ul li a {
             color: white;
-            text-decoration: underline; /* Subrayar los enlaces */
-            font-size: 1.2em;
+            text-decoration: underline;
             font-weight: bold;
-            text-shadow: 0 0 8px #100f0f, 0 0 15px #f39c12;
+            font-size: 20px;
         }
 
         footer {
             background: rgba(0, 0, 0, 0.8);
-            color: white;
             text-align: center;
             padding: 10px;
+            margin-top: auto; /* Asegura que el footer se mantenga al final */
         }
+
+        /* Ajustar el contenido para que no quede cubierto por el menú */
+        main {
+            padding-top: 80px; /* Espacio suficiente para el menú */
+            flex-grow: 1; /* Para que el contenido ocupe el espacio disponible */
+        }
+
+   
+
+        /* Para el enlace de correo electrónico */
+        a[href^="mailto:"] {
+            color: #f1b00a; /* Color naranja */
+        }
+
+        /* Para el enlace de LinkedIn */
+        a[href*="linkedin.com"] {
+            color: #f1b00a; /* Color naranja */
+        }
+
     </style>
+
+    <script>
+        function mostrarSeccion(id) {
+            // Ocultamos todas las secciones
+            const secciones = document.querySelectorAll('section');
+            secciones.forEach(seccion => seccion.classList.remove('active'));
+
+            // Mostramos la sección seleccionada
+            document.getElementById(id).classList.add('active');
+        }
+
+       
+
+        window.onload = function() {
+            mostrarSeccion('inicio'); // Mostrar la sección 'Inicio' al cargar la página
+        }
+    </script>
 </head>
 <body>
+
     <header>
         <h1>GringoInTech</h1>
         <h3>SysAdmin</h3>
-        <p>FP Ciclo Superior de Administración de Sistemas Informáticos en Red</p>
-        <p>IES MURALLA ROMANA - 2023/2025</p>
-        <nav>
-            <ul>
-                <li><a href="#primer-ano">1° Año de ADSIINRE</a></li>
-                <li><a href="#segundo-ano">2° Año de ADSIINRE</a></li>
-            </ul>
-        </nav>
+        <p>FP Ciclo Superior de Administración de Sistemas Informáticos en Red (ASIR) </p>
+        <p>IES Muralla Romana - 2023/2025</p>
     </header>
 
-    <section id="primer-ano">
-        <h2>1° Año de ADSIINRE</h2>
-        <p>Aquí encontrarás los recursos para el 1° Año de ADSIINRE: </p>
+    <nav>
         <ul>
-            <li><a href="https://drive.google.com/drive/folders/1N7owVmxirAOcNW_AClqskqB48c4dLxGp?usp=sharing">ISO - Implantación de Sistemas Operativos</a></li>
-            <li><a href="https://drive.google.com/drive/folders/1VaKf7bq1nOWcfus0RfFDzTc5441KwfzE?usp=sharing">FUHA - Fundamentos de Hardware</a></li>
-            <li><a href="https://drive.google.com/drive/folders/1oGuziqy9ei5G76-YvcZYgGTvJgl7SokJ?usp=sharing">PAR - Planificación de Redes</a></li>
-            <li><a href="https://drive.google.com/drive/folders/1VoczZC-gVtDCCWBfJ4igOeO7c7tzopTS?usp=sharing">XBD - Xestión de base de datos</a></li>
-            <li><a href="https://drive.google.com/drive/folders/14lKce5uhnaRhOFUCFUbOWwzsU_dEySLr?usp=sharing">LMSX - Lenguajes de Marcas y sistemas de Gestión</a></li>
+            <li><a onclick="mostrarSeccion('inicio')">Inicio</a></li>
+            <li><a onclick="mostrarSeccion('contenido-asir')">Administración de Sistemas Informáticos en Red</a></li>
+           <!-- <li><a onclick="mostrarSeccion('contacto')">Contacto</a></li> -->
+           
         </ul>
-    </section>
+    </nav>
 
-    <section id="segundo-ano">
-        <h2>2° Año de ADSIINRE</h2>
-        <p>Aquí encontrarás los recursos para el 2° Año de ADSIINRE:</p>
-        <ul>
-            <li><a href="https://drive.google.com/drive/folders/1MTV5JfgPPbFyWuhq-eyGg1EZPCITNLlf?usp=sharing">ASO - Administración de sistemas operativos</a></li>
-            <li><a href="https://drive.google.com/drive/folders/1EkS5YIFyuf0EUsJ2Ux4-qo15p8SCzslM?usp=sharing">SRI - Servizos de rede e internet</a></li>
-            <li><a href="https://drive.google.com/drive/folders/1xIuz2OF2FJks6cXOwdd-pCYeBe4urzns?usp=sharing">IAW - Implantación de aplicaciones web</a></li>
-            <li><a href="https://drive.google.com/drive/folders/1Jb1qMrTqSlpd7CmbFDZe3zJeJRRS14tZ?usp=sharing">SAD - Seguridad y alta disponibilidad</a></li>
-            <li><a href="https://drive.google.com/drive/folders/1zMDeKElheBq9WH-rPeptYdTjbhqVNYKI?usp=sharing">ASXB - Administración de sistemas gestores de base de datos</a></li>
-        </ul>
-    </section>
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio" class="active">
+            <h2>Bienvenidos a GringoInTech</h2>
+            <p>Soy un profesional brasileño que llegó a España en mayo de 2023 sin conocimientos previos de castellano ni gallego. En septiembre de 2023, comencé el ciclo de FP Superior en Administración de Sistemas Informáticos en Red (ASIR) y, a pesar de la barrera del idioma, logré superar el ciclo a la primera, finalizándolo en marzo de 2025. Esta trayectoria refleja mi capacidad de adaptación, aprendizaje autónomo y determinación ante nuevos desafíos. Este blog recoge los conocimientos y competencias técnicas adquiridas durante mi formación, mostrando mi compromiso, disciplina y pasión por la tecnología.</p>
+        </section>
+
+        <!-- Sección de Contenido ASIR -->
+        <section id="contenido-asir">
+            <h2>Proyectos y Conocimientos Clave de mi Formación ASIR</h2>
+            <p>En esta sección encontrarás todo el contenido que he abordado durante mi ciclo de FP Superior en Administración de Sistemas Informáticos en Red (ASIR). A través de este blog, comparto los conocimientos adquiridos en áreas como administración de redes, sistemas operativos, virtualización, seguridad informática y mucho más. Aquí se reflejan los proyectos, tareas y estudios realizados a lo largo del ciclo, con el objetivo de mostrar el aprendizaje práctico y teórico que me ha permitido superar el ciclo con éxito:</p>
+           
+            <h2>1° Año de ADSIINRE</h2>
+      
+            <ul>
+                <li><a href="https://drive.google.com/drive/folders/1N7owVmxirAOcNW_AClqskqB48c4dLxGp?usp=sharing">ISO - Implantación de Sistemas Operativos</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1VaKf7bq1nOWcfus0RfFDzTc5441KwfzE?usp=sharing">FUHA - Fundamentos de Hardware</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1oGuziqy9ei5G76-YvcZYgGTvJgl7SokJ?usp=sharing">PAR - Planificación de Redes</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1VoczZC-gVtDCCWBfJ4igOeO7c7tzopTS?usp=sharing">XBD - Xestión de base de datos</a></li>
+                <li><a href="https://drive.google.com/drive/folders/14lKce5uhnaRhOFUCFUbOWwzsU_dEySLr?usp=sharing">LMSX - Lenguajes de Marcas y sistemas de Gestión</a></li>
+            </ul>
+            <h2>2° Año de ADSIINRE</h2>
+            <ul>
+                <li><a href="https://drive.google.com/drive/folders/1MTV5JfgPPbFyWuhq-eyGg1EZPCITNLlf?usp=sharing">ASO - Administración de sistemas operativos</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1EkS5YIFyuf0EUsJ2Ux4-qo15p8SCzslM?usp=sharing">SRI - Servizos de rede e internet</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1xIuz2OF2FJks6cXOwdd-pCYeBe4urzns?usp=sharing">IAW - Implantación de aplicaciones web</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1Jb1qMrTqSlpd7CmbFDZe3zJeJRRS14tZ?usp=sharing">SAD - Seguridad y alta disponibilidad</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1zMDeKElheBq9WH-rPeptYdTjbhqVNYKI?usp=sharing">ASXB - Administración de sistemas gestores de base de datos</a></li>
+            </ul>
+        </section>
+
+        <!-- Sección de Contacto 
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes ponerte en contacto con nosotros a través de nuestra dirección de correo electrónico: <a href="mailto:contacto@gringointech.com">contacto@gringointech.com</a></p>
+            <p>O síguenos en LinkedIn: <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">Mi perfil de LinkedIn</a></p>
+        </section>
+    -->
+
+    </main>
 
     <footer>
         <p>&copy; 2025 GringoInTech - Todos los derechos reservados</p>
     </footer>
+
 </body>
 </html>
