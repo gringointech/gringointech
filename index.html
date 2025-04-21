@@ -129,14 +129,20 @@ ul li a:hover {
             color: #f1b00a;
         }
         @media (max-width: 768px) {
-            header h1 { font-size: 2em; }
-            header h3, header p { font-size: 1em; }
-            nav ul li { display: block; margin: 10px 0; }
-            nav ul li a { font-size: 1em; }
-            section { margin: 10px; padding: 15px; }
-            h2 { font-size: 1.5em; }
-            p, ul li a { font-size: 1em; }
-        }
+    body {
+        background-attachment: scroll; /* En móvil, no mantener fijo */
+        background-position: center top;
+        background-size: cover;
+    }
+
+    body::before {
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: cover;
+        opacity: 0.7; /* Puedes subir un poquito para verse mejor en móvil */
+    }
+}
+
     </style>
 
     <script>
