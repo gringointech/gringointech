@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Allow: /public/
+
+Sitemap: https://gringointech.netlify.app/sitemap.xml
