@@ -1,7 +1,10 @@
+<div align="center">
+
 # SysAdmin | Python Developer
 
-## Tech Stack
+## Advanced skills
 
+</div>
 ### Lenguajes de programación y herramientas:
 ![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python&logoColor=yellow)
 ![Bash](https://img.shields.io/badge/-Bash-000000?style=flat&logo=gnubash&logoColor=green)
@@ -26,5 +29,5 @@
 ![Automatización](https://img.shields.io/badge/-Automatización-000000?style=flat&logo=robot&logoColor=yellow)
 
 
-## GitHub Stats
+## 📈 GitHub Stats
 ![Gringo GitHub Stats](https://github-readme-stats.vercel.app/api?username=gringointech&show_icons=true&hide_title=true&count_private=true&hide=prs)
