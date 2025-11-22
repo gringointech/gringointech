@@ -1,7 +1,4 @@
-# ¡Hola! Soy Matheus 👋
-
-SysAdmin | Python Developer
-
+# SysAdmin | Python Developer
 
 ## Tech Stack
 
