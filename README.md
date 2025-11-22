@@ -1,7 +1,8 @@
 
-
-<div align="center"> # SysAdmin | Python Developer </div>
-
+<div align="center">
+# SysAdmin | Python Developer
+ </div>
+ 
 ## Advanced skills
 
 
