@@ -25,4 +25,4 @@
 
 
 ## GitHub Stats
-![Gringo GitHub Stats](https://github-readme-stats.vercel.app/api?username=tu-usuario&show_icons=true&hide_title=true&count_private=true&hide=prs)
+![Gringo GitHub Stats](https://github-readme-stats.vercel.app/api?username=gringointech&show_icons=true&hide_title=true&count_private=true&hide=prs)
