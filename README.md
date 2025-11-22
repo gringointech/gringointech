@@ -1,9 +1,9 @@
 
 <div align="center">
-# SysAdmin | Python Developer
+<h1> SysAdmin | Python Developer </h1> 
  </div>
  
-## Advanced skills
+## Advanced skills:
 
 
 ### Lenguajes de programación y herramientas:
