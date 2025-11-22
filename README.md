@@ -17,6 +17,7 @@
 
 ### Análisis y Visualización de Datos:
 ![Pandas](https://img.shields.io/badge/-Pandas-000000?style=flat&logo=pandas&logoColor=green)
+![NumPy](https://img.shields.io/badge/-NumPy-000000?style=flat&logo=numpy&logoColor=green)
 ![Jupyter](https://img.shields.io/badge/-Jupyter-000000?style=flat&logo=jupyter&logoColor=orange)
 ![Power BI](https://img.shields.io/badge/-Power_BI-000000?style=flat&logo=powerbi&logoColor=yellow)
 
