@@ -11,9 +11,13 @@
 ![Bash](https://img.shields.io/badge/-Bash-000000?style=flat&logo=gnubash&logoColor=green)
 ![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5&logoColor=orange)
 ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=flat&logo=css3&logoColor=blue)
+![Flask](https://img.shields.io/badge/-Flask-000000?style=flat&logo=flask&logoColor=black)
+![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=docker&logoColor=white)
 ![WordPress](https://img.shields.io/badge/-WordPress-000000?style=flat&logo=wordpress&logoColor=blue)
 ![Elementor](https://img.shields.io/badge/-Elementor-000000?style=flat&logo=elementor&logoColor=purple)
 ![APIs](https://img.shields.io/badge/-REST_APIs-000000?style=flat&logo=swagger&logoColor=green)
+
+
 
 ### Análisis y Visualización de Datos:
 ![Pandas](https://img.shields.io/badge/-Pandas-000000?style=flat&logo=pandas&logoColor=green)
