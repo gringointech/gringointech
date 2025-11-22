@@ -22,3 +22,7 @@
 ![Linux](https://img.shields.io/badge/-Linux-000000?style=flat&logo=linux&logoColor=green)
 ![Windows Server](https://img.shields.io/badge/-Windows_Server-000000?style=flat&logo=windows-server&logoColor=blue)
 ![Automatización](https://img.shields.io/badge/-Automatización-000000?style=flat&logo=robot&logoColor=yellow)
+
+
+## GitHub Stats
+![Gringo GitHub Stats](https://github-readme-stats.vercel.app/api?username=tu-usuario&show_icons=true&hide_title=true&count_private=true&hide=prs)
