@@ -1,10 +1,10 @@
-<div align="center">
 
-# SysAdmin | Python Developer
+
+<div align="center"> # SysAdmin | Python Developer </div>
 
 ## Advanced skills
 
-</div>
+
 ### Lenguajes de programación y herramientas:
 ![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python&logoColor=yellow)
 ![Bash](https://img.shields.io/badge/-Bash-000000?style=flat&logo=gnubash&logoColor=green)
