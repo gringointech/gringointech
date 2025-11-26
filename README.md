@@ -37,5 +37,4 @@
 ![Automatización](https://img.shields.io/badge/-Automatización-000000?style=flat&logo=robot&logoColor=yellow)
 
 
-## 📈 GitHub Stats
-![Gringo GitHub Stats](https://github-readme-stats.vercel.app/api?username=gringointech&show_icons=true&hide_title=true&count_private=true&hide=prs)
+
